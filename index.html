@@ -8,16 +8,14 @@
 		<a-marker preset="hiro">
 			<a-entity
 				position="0 0.5 0"
-				scale="1 1 1"
-				rotation = "0 -270 0"
 				gltf-model="obj/scene.gltf"
 			>
 				<a-animation
 				    attribute="rotation"
-				    from="0 0 0"
-				    to="180 180 0"
+				    to="360 180 0"
 				    delay="500"
 				    dur="9000"
+				    easing="lianer"
 				  ></a-animation>
 			</a-entity>
 		</a-marker>
