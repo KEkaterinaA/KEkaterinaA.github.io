@@ -6,15 +6,10 @@
 	<a-scene embedded arjs='patternRatio:0.7'>
 		<a-marker preset="custom" type="pattern" url="shiba.patt">
 			<a-entity
-				position="0 5 0"
+				position="0 0 0"
+				rotate="1 1 1"
 				gltf-model="obj/scene.gltf"
 			>
-				<a-animation
-				    attribute="rotation"
-				    to="360 360 0"
-				    dur="9000"
-				    easing="lianer"
-				  ></a-animation>
 			</a-entity>
 		</a-marker>
 		<a-entity camera></a-entity>
