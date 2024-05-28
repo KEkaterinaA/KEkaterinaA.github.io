@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
+<body>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-<body>
 	<a-scene embedded arjs>
-		<a-marker type="pattern" url="shiba.patt">
+		<a-marker-camera type="pattern" url="shiba.patt">
 			<a-entity
 				position="0 0 0"
 				rotate="1 1 1"
 				gltf-model="obj/scene.gltf"
 			>
 			</a-entity>
-		</a-marker>
+		</a-marker-camera>
 		<a-entity camera></a-entity>
 	</a-scene>
 </body>
