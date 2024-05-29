@@ -7,14 +7,9 @@
 	<a-scene embedded arjs>
 		<a-marker preset="hiro">
 		<!-- <a-marker preset='costum' type='pattern' url='path/to/pattern-shiba.patt'> -->
-			<a-entity position="0 0.5 0" gltf-model="obj/scene.gltf">
-				<a-animation
-					attribute="rotation"
-					dur="3000"
-					to="0 360 0"
-					repeat="indefinite"
-					easing="linear">	
-				</a-animation>
+			<a-entity position="0 0 0" rotation="-90 45 45" scale="1 1 1" gltf-model="obj/scene.gltf">
+				<a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000"
+     					     repeat="indefinite"></a-animation>
 			</a-entity>
 		</a-marker>
 		<a-entity camera></a-entity>
